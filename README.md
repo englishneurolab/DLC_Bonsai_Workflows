@@ -31,4 +31,4 @@ Dependencies:
    - GetBodyPart: Define a bodypart of interest that was trained in deeplabcut
    - Specify ROI in pixels in greaterThan and lessThan nodes (Measure something in pixels of known length to make conversion)
    - Specify paths to save CSV and video files to
- - In spike2, create a new channel to read in the HIGH and LOW digital output from arduino & in the graphical editor make conditionals for creating pulses           
+ - In spike2, create a new channel to read in the HIGH and LOW digital output from arduino & in the graphical editor make conditionals for creating pulses          
