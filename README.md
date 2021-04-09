@@ -1,5 +1,8 @@
 # DLC_Bonsai_Workflows
 
+Overall Flow:
+- Camera feed > Bonsai > Arduino > Spike2
+
  This Repo Contains:
  - Bonsai Workflow: Inputs camera feed from a pylon camera, tracks an animal's position using a DLC node, defines a region of interest in pixels for opto stim, and outputs a logical string to a specified COM Port (True when animal is in ROI, False when animal is not in ROI)
  - Additional Bonsai Outputs:
