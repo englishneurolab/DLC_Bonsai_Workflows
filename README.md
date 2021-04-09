@@ -7,7 +7,7 @@
    - CSV with position xy coordinates of animal
    - CSV with timestamps corresponding to position coordinates
    - CSV with timestamps corresponding to logical output of bonsai
- - Arduino Code: Reads logical string from output of bonsai, if True sets digital output arduino pin to HIGH, if False sets digital output ardunio pin to LOW
+ - Arduino Code: Reads logical string from output of bonsai, if True sets digital output arduino pin to HIGH, if False sets digital output ardunio pin to LOW, and then relays to CED and intan
 
 Dependencies:
 - Spike2
