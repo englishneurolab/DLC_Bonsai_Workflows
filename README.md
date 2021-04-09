@@ -20,15 +20,15 @@ Dependencies:
    - Deeplabcut
    - Ephys
 
- General Steps:\
-     - Create a video of animal\
-     - Label frames of video in deeplabcut gui and train model\
-     - Export Model: deeplabcut.export_model('config_path\config.yaml', iteration=None, shuffle=1, trainingsetindex=0, snapshotindex=None, TFGPUinference=True, overwrite=False, make_tar=True)\
-     - In bonsai workflow adjust parameters of nodes\
-           - Crop: Specify cropping parameters of camera (may not be necessary)\
-           - DetectPose: Specify modelFilename and modelPoseConfig, both found in exported models folder within your dlc model folder\
-           - ConfidenceThreshold: Specify confidence of dlc model for pose estimation\
-           - GetBodyPart: Define a bodypart of interest that was trained in deeplabcut\
-           - Specify ROI in pixels in greaterThan and lessThan nodes (Measure something in pixels of known length to make conversion)\
-           - Specify paths to save CSV and video files to\
-     - In spike2, create a new channel to read in the HIGH and LOW digital output from arduino & in the graphical editor make conditionals for creating pulses\            
+ General Steps:
+ - Create a video of animal
+ - Label frames of video in deeplabcut gui and train model
+ - Export Model: deeplabcut.export_model('config_path\config.yaml', iteration=None, shuffle=1, trainingsetindex=0, snapshotindex=None, TFGPUinference=True, overwrite=False, make_tar=True)
+ - In bonsai workflow adjust parameters of nodes
+   - Crop: Specify cropping parameters of camera (may not be necessary)
+   - DetectPose: Specify modelFilename and modelPoseConfig, both found in exported models folder within your dlc model folder
+   - ConfidenceThreshold: Specify confidence of dlc model for pose estimation
+   - GetBodyPart: Define a bodypart of interest that was trained in deeplabcut
+   - Specify ROI in pixels in greaterThan and lessThan nodes (Measure something in pixels of known length to make conversion)
+   - Specify paths to save CSV and video files to
+ - In spike2, create a new channel to read in the HIGH and LOW digital output from arduino & in the graphical editor make conditionals for creating pulses           
