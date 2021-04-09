@@ -1,25 +1,25 @@
 # DLC_Bonsai_Workflows
 
  This Repo Contains:\
-     - Bonsai Workflow: Inputs camera feed from a pylon camera, tracks an animal's position using a DLC node, defines a region of interest in pixels for opto stim, and outputs                          a logical string to a specified COM Port (True when animal is in ROI, False when animal is not in ROI)
-                        - Additional Bonsai Outputs:
-                               - Video
-                               - CSV with position xy coordinates of animal
-                               - CSV with timestamps corresponding to position coordinates
-                               - CSV with timestamps corresponding to logical output of bonsai
+     - Bonsai Workflow: Inputs camera feed from a pylon camera, tracks an animal's position using a DLC node, defines a region of interest in pixels for opto stim, and outputs\                          a logical string to a specified COM Port (True when animal is in ROI, False when animal is not in ROI)\
+                        - Additional Bonsai Outputs:\
+                               - Video\
+                               - CSV with position xy coordinates of animal\
+                               - CSV with timestamps corresponding to position coordinates\
+                               - CSV with timestamps corresponding to logical output of bonsai\
 
-     - Arduino Code: Reads logical string from output of bonsai, if True sets digital output arduino pin to HIGH, if False sets digital output ardunio pin to LOW
+     - Arduino Code: Reads logical string from output of bonsai, if True sets digital output arduino pin to HIGH, if False sets digital output ardunio pin to LOW\
 
-Dependencies:
-     - Spike2
-     - DeepLabCut https://github.com/DeepLabCut/DeepLabCut/blob/master/docs/installation.md
-     - DeepLabCut-live https://github.com/DeepLabCut/DeepLabCut-live
-     - Pylon viewer version 5.1 installed (if using pylon camera)
-     - Bonsai https://bonsai-rx.org/docs/installation/ (also see https://github.com/bonsai-rx/deeplabcut)
-             Once installed, go to manage packages in Bonsai interface and add the following packages:
-                  - Pylon Basler
-                  - Deeplabcut
-                  - Ephys
+Dependencies:\
+     - Spike2\
+     - DeepLabCut https://github.com/DeepLabCut/DeepLabCut/blob/master/docs/installation.md\
+     - DeepLabCut-live https://github.com/DeepLabCut/DeepLabCut-live\
+     - Pylon viewer version 5.1 installed (if using pylon camera)\
+     - Bonsai https://bonsai-rx.org/docs/installation/ (also see https://github.com/bonsai-rx/deeplabcut)\
+             Once installed, go to manage packages in Bonsai interface and add the following packages:\
+                  - Pylon Basler\
+                  - Deeplabcut\
+                  - Ephys\
 
  General Steps:
      - Create a video of animal
